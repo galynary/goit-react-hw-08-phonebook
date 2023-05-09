@@ -1,5 +1,14 @@
 import styled from 'styled-components';
-import { theme } from '../../styles/theme';
+import { theme } from 'styles/theme';
+export const ContactWrap = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+  > p {
+    font-size: {theme.typography.text};
+  }
+`;
 
 export const List = styled.ul`
   display: flex;

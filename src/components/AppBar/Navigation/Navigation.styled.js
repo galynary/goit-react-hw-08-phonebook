@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { theme } from '../../styles/theme';
+import { theme } from 'styles/theme';
 import { Link } from 'react-router-dom';
-
 export const StyledLink = styled(Link)`
   display: inline-block;
   text-decoration: none;
