@@ -1,4 +1,4 @@
-import heroBg from '../../img/hero-bg.jpg';
+import heroBg from '../../img/phonebook.png';
 import { HomeSection, Container, Wrapper, StyledLink } from './Home.styled';
 
 export default function Home() {

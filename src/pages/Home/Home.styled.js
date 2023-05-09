@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import { theme } from '../../styles/theme';
 
 export const HomeSection = styled.section`
   padding: 36px 0;
-  background-color: #fce86d;
+  background-color: ${theme.colors.white};
 `;
 
 export const Container = styled.div`
@@ -58,7 +59,7 @@ export const Wrapper = styled.div`
     div {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: ${theme.gap[3]}px;
     }
     h1 {
       font-size: 56px;
@@ -77,16 +78,16 @@ export const StyledLink = styled(NavLink)`
   width: 160px;
   height: 60px;
   margin: 0 auto;
-  color: #ffffff;
-  background-color: #1976d2;
+  color: ${theme.colors.white};
+  background-color: ${theme.colors.second};
   border-radius: 10px;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: #fefefe;
-    background-color: #000cff;
+    color: ${theme.colors.hover};
+    background-color: ${theme.colors.hover};
   }
   @media screen and (min-width: 1200px) {
     margin: 0;

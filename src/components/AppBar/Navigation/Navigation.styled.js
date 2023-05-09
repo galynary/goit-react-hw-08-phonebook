@@ -1,17 +1,18 @@
 import styled from 'styled-components';
+import { theme } from '../../styles/theme';
 import { Link } from 'react-router-dom';
 
 export const StyledLink = styled(Link)`
   display: inline-block;
   text-decoration: none;
-  padding: 12px;
-  color: #ffffff;
+  padding: ${theme.padding[2]}px;
+  color: ${theme.colors.white}
   transition: color 250ms ease-in-out;
   &:hover {
-    color: lightgrey;
+    color: ${theme.colors.second};
   }
   &:active {
-    color: lightgrey;
+    color: ${theme.colors.second};
   }
 `;
 
