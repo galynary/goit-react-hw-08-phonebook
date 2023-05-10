@@ -1,5 +1,5 @@
 import heroBg from '../../img/phonebook.png';
-import { HomeSection, Container, Wrapper, StyledLink } from './Home.styled';
+import { HomeSection, Container, Wrapper } from './Home.styled';
 
 export default function Home() {
   return (
@@ -12,7 +12,6 @@ export default function Home() {
               Welcome to the Phone Book application! Try it out today and
               discover how easy it is to manage your contacts!
             </p>
-            <StyledLink to="/register">Get Started</StyledLink>
           </div>
           <img src={heroBg} alt="People with phones" />
         </Wrapper>

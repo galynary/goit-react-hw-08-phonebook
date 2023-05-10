@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
 import { theme } from '../../styles/theme';
 
 export const HomeSection = styled.section`
@@ -10,15 +9,23 @@ export const HomeSection = styled.section`
 export const Container = styled.div`
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 120px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 60px;
+  margin: 0 auto;
   @media screen and (min-width: 480px) {
     width: 480px;
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
   }
   @media screen and (min-width: 768px) {
     width: 768px;
-    padding-top: 20px;
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
@@ -27,12 +34,16 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  gap: 100px;
   div {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    text-align: center;
+    align-items: center;
   }
   h1 {
     font-size: 24px;
@@ -40,10 +51,11 @@ export const Wrapper = styled.div`
   }
   p {
     line-height: 1.2;
+    max-width: 500px;
+    text-align: center;
+    align-items: center;
   }
-  img {
-    display: none;
-  }
+
   @media screen and (min-width: 768px) {
     h1 {
       font-size: 42px;
@@ -52,9 +64,9 @@ export const Wrapper = styled.div`
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    text-align: left;
+    text-align: center;
     gap: 100px;
     div {
       display: flex;
@@ -64,32 +76,5 @@ export const Wrapper = styled.div`
     h1 {
       font-size: 56px;
     }
-    img {
-      display: block;
-      width: 540px;
-    }
-  }
-`;
-
-export const StyledLink = styled(NavLink)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 160px;
-  height: 60px;
-  margin: 0 auto;
-  color: ${theme.colors.white};
-  background-color: ${theme.colors.second};
-  border-radius: 10px;
-  text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: ${theme.colors.hover};
-    background-color: ${theme.colors.hover};
-  }
-  @media screen and (min-width: 1200px) {
-    margin: 0;
   }
 `;
