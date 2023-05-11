@@ -1,7 +1,7 @@
 import { theme } from '../../styles/theme';
 import styled from 'styled-components';
 export const Wrapper = styled.div`
-  max-width: 500px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   padding: ${theme.padding[2]}px;

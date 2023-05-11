@@ -6,6 +6,7 @@ export const theme = {
     hover: '#303f9f',
     green: '#119b9b',
     second: '#BAB7B7',
+    blue: '#1976d2',
   },
   gap: [5, 10, 15, 20, 30],
   padding: [5, 10, 15, 20],

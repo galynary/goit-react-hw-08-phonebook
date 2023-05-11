@@ -5,7 +5,7 @@ export const StyledLink = styled(Link)`
   display: inline-block;
   text-decoration: none;
   padding: ${theme.padding[2]}px;
-  color: ${theme.colors.white}
+  color: ${theme.colors.white};
   transition: color 250ms ease-in-out;
   &:hover {
     color: ${theme.colors.second};

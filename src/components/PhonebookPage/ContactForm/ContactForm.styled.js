@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { theme } from 'styles/theme';
 
 export const Form = styled.form`
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,12 +26,12 @@ export const Label = styled.label`
 export const Input = styled.input`
   border: 1px solid ${theme.colors.second};
   padding: ${theme.padding[2]}px;
-  border-radius: 10px;
+  border-radius: 20px;
+  width: 100px;
 `;
 export const Button = styled.button`
-  width: 100%;
   background-color: ${theme.colors.green};
-  padding: ${theme.padding[3]}px;
+  padding: 20px 250px;
   border-radius: 10px;
   color: ${theme.colors.white};
   text-transform: uppercase;
