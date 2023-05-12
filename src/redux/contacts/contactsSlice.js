@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { fetchContacts, addContact, deleteContact } from './operations';
 
 const initialState = {
-  items: [],
+  contacts: [],
   isLoading: false,
   error: null,
 };
@@ -30,7 +30,7 @@ const contactsSlice = createSlice({
         state.error = null;
       })
       .addCase(addContact.fulfilled, (state, action) => {
-        state.items.push(action.payload);
+        state.contacts.push(action.payload);
         state.isLoading = false;
       })
       .addCase(addContact.rejected, (state, action) => {
@@ -42,10 +42,10 @@ const contactsSlice = createSlice({
         state.error = null;
       })
       .addCase(deleteContact.fulfilled, (state, action) => {
-        const index = state.items.findIndex(
+        const index = state.contacts.findIndex(
           item => item.id === action.payload.id
         );
-        state.items.splice(index, 1);
+        state.contacts.splice(index, 1);
         state.isLoading = false;
       })
       .addCase(deleteContact.rejected, (state, action) => {
