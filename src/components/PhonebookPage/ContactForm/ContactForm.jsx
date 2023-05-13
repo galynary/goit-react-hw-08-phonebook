@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from './ContactForm.styled';
+import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contacts/operations';
 import { selectContacts } from 'redux/contacts/selectors';
@@ -44,7 +45,7 @@ export const ContactForm = () => {
       notificationSameNumber(number);
       return;
     } else {
-      dispatch(addContact({ name, number }));
+      dispatch(addContact({ name, number, id: nanoid() }));
       resetForm();
     }
   };
