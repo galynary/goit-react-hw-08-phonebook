@@ -16,19 +16,6 @@ export const Form = styled.form`
   border-radius: 10px;
 `;
 
-export const Label = styled.label`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: ${theme.gap[1]}px;
-`;
-
-export const Input = styled.input`
-  border: 1px solid ${theme.colors.second};
-  padding: ${theme.padding[2]}px;
-  border-radius: 20px;
-  width: 100px;
-`;
 export const Button = styled.button`
   background-color: ${theme.colors.green};
   padding: 20px 250px;
